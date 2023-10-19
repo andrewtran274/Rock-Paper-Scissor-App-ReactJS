@@ -1,0 +1,73 @@
+.container {
+  width: 500px;
+  height: min-content;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uidisplaygame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.uidisplaygame .item .icon {
+  color: rgb(0, 30, 94);
+  font-size: 130px;
+}
+
+.uidisplaygame .cpu {
+  transform: rotate(-180deg) rotateX(-180deg);
+}
+
+.message-res {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: rgb(246, 78, 78);
+}
+
+.game-control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.game-control .item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+
+.game-control .item.active {
+  opacity: 1;
+}
+
+.game-control .item:hover {
+  opacity: 1;
+}
+
+.game-control .item .title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.game-control .item .icon {
+  font-size: 70px;
+  transform: rotate(-90deg);
+  color: rgb(0, 179, 255);
+}
