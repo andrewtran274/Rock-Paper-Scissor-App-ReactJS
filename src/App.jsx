@@ -24,7 +24,6 @@ const App = () => {
   const [activeChoice, setActiveChoice] = useState(null);
 
   const handleChoice = (choice) => {
-    setActiveChoice(null);
     setActiveChoice(choice);
 
     const computerRandomChoice =
